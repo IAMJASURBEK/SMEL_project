@@ -1,8 +1,11 @@
 # SMEL_project Task-1 | Kunishev Ozodjon - 12190259
+
+>I have already installed and done all the steps before. So some installations were short because of the fact that I already had them
+
 ## Step 1: Turtle installation
 <br>
 
-First we need to make sure our software is up to date
+First we need to make sure our software is up to date`
 ```
 sudo apt update
 ```
@@ -11,6 +14,7 @@ sudo apt update
 <br />
 
 Then, we will install turtleism
+
 ```
 sudo apt install ros-rolling-turtlesim
 ```
