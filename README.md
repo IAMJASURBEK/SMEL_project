@@ -102,4 +102,4 @@ Now, we can control both turtles by switching to the corresponding terminals and
 
 <br />
 
-To close the windows, we simply press ```ctrl```+```c``` in the terminal.
+To close the windows, we simply press ```ctrl```+```c``` keys on the keyboard while we are in the terminal.
