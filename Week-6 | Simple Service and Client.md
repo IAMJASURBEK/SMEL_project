@@ -1,12 +1,8 @@
-# Kunishev Ozodjon | SMEL_week6
+# 6-1 | Writing a simple service and client
 
 <br />
 
-## Step 1: Writing a simple service and client
-
-<br />
-
-### 1.1. Create a package
+## 1. Create a package
 
 <br />
 
@@ -35,7 +31,7 @@ and add description, maintainer email and name and license information:
 
 <br />
 
-### 1.2. Write the service node
+## 2. Write the service node
 
 <br />
 
@@ -92,7 +88,7 @@ install(TARGETS
 
 <br />
 
-### 1.3. Write the client node
+## 3. Write the client node
 
 <br />
 
@@ -176,7 +172,7 @@ ament_package()
 
 <br />
 
-### 1.4. Build and run
+## 4. Build and run
 
 <br/>
 
