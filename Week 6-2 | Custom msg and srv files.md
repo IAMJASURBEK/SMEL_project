@@ -89,7 +89,7 @@ To assure that the interface which I have created working properly, run the foll
 ```
 ros2 interface show tutorial_interfaces/msg/Num
 ```
-which returns me:
+which returns me: <br/>
 ![in64](https://user-images.githubusercontent.com/90167023/194913585-12aa1d95-7375-4f03-ae49-ea0013cc7294.png)
 
 <br/>
@@ -98,7 +98,7 @@ And the following
 ```
 ros2 interface show tutorial_interfaces/srv/AddThreeInts
 ```
-returns me:
+returns me: <br/>
 ![sum64](https://user-images.githubusercontent.com/90167023/194913821-f2f712e1-b9cc-48f3-a31e-f554a6517591.png)
 
 <br/>
@@ -249,7 +249,7 @@ in one of them, and:
 ```
 ros2 run py_pubsub listener
 ```
-in another. Afterwards, we will get the following ouputs accordingly:
+in another. Afterwards, we will get the following ouputs accordingly: <br/>
 ![talk](https://user-images.githubusercontent.com/90167023/194913084-7bdff8c4-960f-4684-8b9f-1df7aa899938.png)
 
 <br/>
@@ -399,7 +399,7 @@ ros2 run py_srvcli client 7 10 3
 
 <br/>
 
-That will give us the following outouts in those terminals:
+That will give us the following outouts in those terminals: <br/>
 ![output1](https://user-images.githubusercontent.com/90167023/194922067-fff5402c-af83-450b-9fbc-099c64fa3452.png)
 
 <br/>
