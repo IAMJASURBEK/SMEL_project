@@ -8,7 +8,7 @@ First, we navigate to our workspace ```ros2_ws/src``` and create a package with 
 ```
 ros2 pkg create action_tutorials_interfaces
 ```
-Then we navigate to the ction_tutorials_interfaces and create a new folder called ```action```
+Then we navigate to the ```action_tutorials_interfaces``` and create a new folder called ```action```
 ```
 mkdir action
 ```
@@ -24,4 +24,12 @@ int32[] sequence
 ---
 int32[] partial_sequence
 ```
-Then, we go back to the ```
+Then, we go back to the ```action_tutorials_interfaces``` and open the ```CMakeLists.txt``` file to add the following lines of code before the ament_package() line:
+```
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/Fibonacci.action"
+)
+```
+
