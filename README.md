@@ -1,4 +1,4 @@
-# A repository to create files for Smart Mobility Engineering Lab course
+# A repository that includes files for Smart Mobility Engineering Lab course
 
 <br/>
 
