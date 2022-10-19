@@ -1,4 +1,4 @@
-# Launch
+# Launch & tf2
 <br/>
 
 ## Creating a launch file
@@ -799,3 +799,51 @@ ros2 run turtlesim turtle_teleop_key
 ```
 The final output is:<br/>
 ![managing large projects1](https://user-images.githubusercontent.com/90167023/196723241-b93080d8-bcca-4d31-a08a-3429f6a56fec.png)
+
+<br/>
+<br/>
+<br/>
+
+# tf2
+<br/>
+
+>Goal: Runn a turtlesim demo and see some of the power of tf2 in a multi-robot example using turtlesim.
+
+<br/>
+
+I will start by installing the demo package and its dependencies:
+```
+sudo apt-get install ros-humble-turtle-tf2-py ros-humble-tf2-tools ros-humble-tf-transformations
+```
+Now that I installed the ```turtle_tf2_py``` tutorial package let’s run the demo. First, I will open a new terminal and source my ROS 2 installation. Then I will run the following command:
+```
+ros2 launch turtle_tf2_py turtle_tf2_demo.launch.py
+```
+As an output, I can see two turtles in the turtlesim:<br/>
+I will open another terminal and run the following code to control the firs tturtle:
+```
+ros2 run turtlesim turtle_teleop_key
+```
+If I move the first turtle, the second one follows continuously. Now I will use view_frames to create a diagram of the frames being broadcasted by tf2 over ROS:
+```
+ros2 run tf2_tools view_frames
+```
+The output will be:
+```
+Listening to tf data during 5 seconds...
+Generating graph in frames.pdf file...
+```
+Now, I will try to use tf2_echo which reports the transform between any two frames broadcasted over ROS.
+```
+ros2 run tf2_ros tf2_echo turtle2 turtle1
+```
+I can see the transform displayed as the tf2_echo listener receives the frames broadcasted over ROS2:<br/>
+
+![tf2---1](https://user-images.githubusercontent.com/90167023/196727085-79e1b531-1230-43ff-aee4-34713d98dd4b.png)
+
+<br/>
+
+Now, I will use ```rviz```. ```rviz``` is a visualization tool that is useful for examining tf2 frames:
+```
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
+```
