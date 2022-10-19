@@ -1,11 +1,15 @@
 # Composing multiple nodes in a single process
 <br/>
 
-So far, I have created several components and installed number of packages. Now, I am going to use some of the components (nodes) in one a single process. First, I will check what kind of components available in my workspace:
+>So far, I have created several components and installed number of packages. Now, I am going to use some of the components (nodes) in one a single process. 
+
+<br/>
+
+First, I will check what kind of components available in my workspace:
 ```
 ros2 component types
 ```
-IAfter confirming the list of available components in my workspace, I will start a component container:
+After confirming the list of available components in my workspace, I will start a component container:
 ```
 ros2 run rclcpp_components component_container
 ```
